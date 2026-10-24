@@ -1,0 +1,161 @@
+{
+  "case_id": "CONTROL-001",
+  "version": "1.0",
+  "status": "ready",
+  "title": "Synthetic pipeline control, not CASE-001",
+  "created_at": "2026-01-01T08:00:00+03:00",
+  "updated_at": "2026-01-03T08:00:00+03:00",
+  "patient": {
+    "id": "PAT-CONTROL",
+    "synthetic_identifier": "MRN-SYN-CONTROL",
+    "display_name": "Synthetic Pipeline Control",
+    "date_of_birth": "1990-01-01",
+    "sex": "unknown"
+  },
+  "encounters": [
+    {
+      "id": "ENC-CONTROL",
+      "patient_id": "PAT-CONTROL",
+      "encounter_type": "outpatient",
+      "department": "Synthetic Department",
+      "provider_name": "Synthetic Clinician",
+      "started_at": "2026-01-01T09:00:00+03:00",
+      "ended_at": "2026-01-01T09:30:00+03:00",
+      "status": "completed"
+    }
+  ],
+  "documents": [
+    {
+      "id": "DOC-CONTROL",
+      "patient_id": "PAT-CONTROL",
+      "encounter_id": "ENC-CONTROL",
+      "document_type": "progress_note",
+      "title": "Synthetic control note",
+      "author": "Synthetic Clinician",
+      "event_at": "2026-01-01T09:00:00+03:00",
+      "authored_at": "2026-01-02T10:00:00+03:00",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE. Pipeline control record only.",
+      "mime_type": "text/plain",
+      "storage_path": "cases/CONTROL-001/control.txt",
+      "metadata": {
+        "department": "Synthetic Department"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "id": "LAB-CONTROL",
+      "patient_id": "PAT-CONTROL",
+      "encounter_id": "ENC-CONTROL",
+      "test_name": "Synthetic control measurement",
+      "test_code": "CONTROL",
+      "value_numeric": 7,
+      "unit": "synthetic units",
+      "reference_range_low": 1,
+      "reference_range_high": 9,
+      "status": "final",
+      "specimen_collected_at": "2026-01-01T09:10:00+03:00",
+      "reported_at": "2026-01-02T11:00:00+03:00",
+      "source_document_id": "DOC-CONTROL"
+    }
+  ],
+  "medications": [
+    {
+      "id": "MED-CONTROL",
+      "patient_id": "PAT-CONTROL",
+      "encounter_id": "ENC-CONTROL",
+      "medication_name": "Synthetic control medication",
+      "dose": 1,
+      "dose_unit": "synthetic unit",
+      "start_at": "2026-01-02",
+      "ordered_at": "2026-01-01T09:20:00+03:00",
+      "status": "ordered",
+      "source_document_id": "DOC-CONTROL"
+    }
+  ],
+  "clinical_events": [
+    {
+      "id": "EVT-CONTROL",
+      "patient_id": "PAT-CONTROL",
+      "encounter_id": "ENC-CONTROL",
+      "event_type": "clinical_observation",
+      "occurred_at": "2026-01-01T09:15:00+03:00",
+      "documented_at": "2026-01-02T10:00:00+03:00",
+      "description": "Synthetic control event",
+      "source_document_id": "DOC-CONTROL"
+    }
+  ],
+  "imaging_studies": [
+    {
+      "id": "IMG-CONTROL",
+      "patient_id": "PAT-CONTROL",
+      "encounter_id": "ENC-CONTROL",
+      "modality": "OTHER",
+      "body_region": "synthetic illustration",
+      "performed_at": "2026-01-01T09:25:00+03:00",
+      "reported_at": "2026-01-02T10:00:00+03:00",
+      "status": "final",
+      "report_document_id": "DOC-CONTROL"
+    }
+  ],
+  "imaging_assets": [],
+  "referrals": [
+    {
+      "id": "REF-CONTROL",
+      "patient_id": "PAT-CONTROL",
+      "encounter_id": "ENC-CONTROL",
+      "referring_department": "Synthetic Department",
+      "referred_department": "Synthetic Follow-up",
+      "reason": "Pipeline control",
+      "ordered_at": "2026-01-01T09:20:00+03:00",
+      "status": "ordered"
+    }
+  ],
+  "ground_truth": {
+    "expected_answer": "EVALUATION_SENTINEL_NEVER_SERVE"
+  },
+  "investigation_target": {
+    "required_discovery": "EVALUATION_SENTINEL_NEVER_SERVE"
+  },
+  "evidence_relationships": [
+    {
+      "label": "EVALUATION_SENTINEL_NEVER_SERVE"
+    }
+  ],
+  "diagnoses": [
+    {
+      "id": "DX-CONTROL",
+      "patient_id": "PAT-CONTROL",
+      "encounter_id": "ENC-CONTROL",
+      "name": "Synthetic control assessment",
+      "status": "provisional",
+      "diagnosed_at": "2026-01-01"
+    }
+  ],
+  "symptoms": [
+    {
+      "id": "SYM-CONTROL",
+      "patient_id": "PAT-CONTROL",
+      "encounter_id": "ENC-CONTROL",
+      "name": "Synthetic control symptom",
+      "status": "documented",
+      "onset_at": "2026-01-01"
+    }
+  ],
+  "diagnostic_reports": [
+    {
+      "id": "RPT-CONTROL",
+      "patient_id": "PAT-CONTROL",
+      "encounter_id": "ENC-CONTROL",
+      "report_type": "other",
+      "title": "Synthetic control report",
+      "status": "final",
+      "issued_at": "2026-01-02T10:00:00+03:00",
+      "document_id": "DOC-CONTROL",
+      "observation_ids": [
+        "LAB-CONTROL"
+      ],
+      "imaging_study_id": "IMG-CONTROL"
+    }
+  ]
+}

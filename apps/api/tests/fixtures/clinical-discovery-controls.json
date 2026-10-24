@@ -1,0 +1,18 @@
+{
+  "description": "Independent synthetic protocol controls; authored semantic decisions are test oracles, not clinical expert approvals.",
+  "controls": [
+    {"name": "valid_relationship", "claim": "Order A records a hold while later report B lists continued use; actual ingestion is unknown.", "decision": "pass", "outcome": "exact"},
+    {"name": "same_citations_no_relationship", "claim": "Records A and B exist.", "decision": "relationship", "outcome": "unsupported"},
+    {"name": "missing_decisive_source", "claim": "Order A conflicts with later report B.", "omit": "B", "decision": "pass", "outcome": "partial"},
+    {"name": "wrong_patient", "claim": "Order A conflicts with later report B.", "foreign": "B", "decision": "pass", "outcome": "unsupported"},
+    {"name": "chronology_unsupported_cause", "claim": "The medication order preceded the laboratory change and therefore caused it.", "decision": "causality", "outcome": "unsupported"},
+    {"name": "definitive_diagnosis", "claim": "These nonspecific observations definitively establish the diagnosis.", "decision": "claim_correctness", "outcome": "unsupported"},
+    {"name": "disconnected_union", "claim": "Separate unrelated observations.", "split": true, "decision": "none", "outcome": "partial"},
+    {"name": "correct_uncertainty", "claim": "The documented order and reported use differ; actual exposure and causality remain unresolved.", "decision": "pass", "outcome": "exact"},
+    {"name": "overlapping_terminology", "claim": "Medication reconciliation: both documents use the word hold, so exposure is confirmed.", "decision": "relationship", "outcome": "unsupported"},
+    {"name": "counterevidence_ignored", "claim": "The later list proves ingestion despite the recorded uncertainty.", "decision": "counterevidence", "outcome": "unsupported"},
+    {"name": "uncertainty_wrong", "claim": "Ingestion is certainly established by the list.", "decision": "uncertainty", "outcome": "unsupported"},
+    {"name": "missing_evidence_ignored", "claim": "No administration record is needed to prove ingestion.", "decision": "missing_evidence", "outcome": "unsupported"},
+    {"name": "false_positive", "claim": "The physician deliberately withheld care.", "decision": "false_positives", "outcome": "unsupported"}
+  ]
+}

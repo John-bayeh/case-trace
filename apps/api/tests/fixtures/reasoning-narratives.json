@@ -1,0 +1,14 @@
+{
+  "A": ["Headache first started on August 18, 2024.", "Persistent headache observed during assessment."],
+  "B": ["Patient first experienced coughing on August 18, 2024.", "Patient reports a dry cough at review."],
+  "C": ["First noticed cough in late August 2024.", "Cough present on examination."],
+  "D": ["A new episode of cough started on August 18, 2024.", "Had a similar cough in July."],
+  "E": ["Cough first started on August 18, 2024.", "Patient denies cough."],
+  "F": ["Cough first started on August 18, 2024.", "History of intermittent coughing."],
+  "G": ["Rule out pneumonia. Possible medication-related cough.", "Family history of asthma."],
+  "H": ["Patient reports cough after a medication order.", "Cough present on examination."],
+  "I": ["Follow-up scheduled; completion not documented in the available notes.", "No additional symptoms reported."],
+  "J": ["Rash first began on August 18, 2024.", "Rash observed at triage."],
+  "K": ["Fever first started on August 18, 2024.", "Fever recorded during examination."],
+  "L": ["Headache started on August 1, 2024.", "No headache today."]
+}

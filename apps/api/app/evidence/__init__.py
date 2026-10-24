@@ -1,0 +1,1 @@
+"""Independent deterministic evidence validation."""
