@@ -1,0 +1,698 @@
+{
+  "case_id": "CASE-003",
+  "version": "1.0",
+  "status": "ready",
+  "title": "The Result That Never Reached the Follow-Up Visit",
+  "description": "A pathology result is finalized and routed, but the record does not establish patient communication or completed follow-up.",
+  "created_at": "2026-10-22T09:00:00+03:00",
+  "updated_at": "2026-10-22T14:00:00+03:00",
+  "patient": {
+    "id": "SYN-003",
+    "synthetic_identifier": "MRN-SYN-003",
+    "display_name": "M. Patient (synthetic)",
+    "date_of_birth": "1971-03-22",
+    "sex": "female"
+  },
+  "encounters": [
+    {
+      "id": "ENC-003-01",
+      "patient_id": "SYN-003",
+      "encounter_type": "outpatient",
+      "department": "Primary Care",
+      "provider_name": "Dr. Hana Tesfaye",
+      "started_at": "2026-01-10T09:00:00+03:00",
+      "ended_at": "2026-01-10T11:30:00+03:00",
+      "status": "completed"
+    },
+    {
+      "id": "ENC-003-02",
+      "patient_id": "SYN-003",
+      "encounter_type": "specialist",
+      "department": "Gastroenterology",
+      "provider_name": "Dr. Leila Morgan",
+      "started_at": "2026-01-24T09:00:00+03:00",
+      "ended_at": "2026-01-24T11:30:00+03:00",
+      "status": "completed"
+    },
+    {
+      "id": "ENC-003-03",
+      "patient_id": "SYN-003",
+      "encounter_type": "procedure",
+      "department": "Endoscopy",
+      "provider_name": "Dr. Leila Morgan",
+      "started_at": "2026-01-31T09:00:00+03:00",
+      "ended_at": "2026-01-31T11:30:00+03:00",
+      "status": "completed"
+    },
+    {
+      "id": "ENC-003-04",
+      "patient_id": "SYN-003",
+      "encounter_type": "laboratory",
+      "department": "Pathology",
+      "provider_name": "P. Alemu, MD",
+      "started_at": "2026-02-02T09:00:00+03:00",
+      "ended_at": "2026-02-02T11:30:00+03:00",
+      "status": "completed"
+    },
+    {
+      "id": "ENC-003-05",
+      "patient_id": "SYN-003",
+      "encounter_type": "outpatient",
+      "department": "Primary Care",
+      "provider_name": "Dr. Hana Tesfaye",
+      "started_at": "2026-02-08T09:00:00+03:00",
+      "ended_at": "2026-02-08T11:30:00+03:00",
+      "status": "completed"
+    },
+    {
+      "id": "ENC-003-06",
+      "patient_id": "SYN-003",
+      "encounter_type": "follow_up",
+      "department": "Primary Care",
+      "provider_name": "Dr. Hana Tesfaye",
+      "started_at": "2026-03-05T09:00:00+03:00",
+      "ended_at": "2026-03-05T11:30:00+03:00",
+      "status": "completed"
+    },
+    {
+      "id": "ENC-003-07",
+      "patient_id": "SYN-003",
+      "encounter_type": "outpatient",
+      "department": "Gastroenterology",
+      "provider_name": "Dr. Leila Morgan",
+      "started_at": "2026-04-14T09:00:00+03:00",
+      "ended_at": "2026-04-14T11:30:00+03:00",
+      "status": "completed"
+    }
+  ],
+  "clinical_events": [
+    {
+      "id": "EVT-003-01",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-01",
+      "event_type": "assessment",
+      "occurred_at": "2026-01-10T09:40:00+03:00",
+      "documented_at": "2026-01-10T12:00:00+03:00",
+      "description": "Iron deficiency anemia prompts diagnostic referral.",
+      "source_document_id": "DOC-003-01"
+    },
+    {
+      "id": "EVT-003-02",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-03",
+      "event_type": "procedure",
+      "occurred_at": "2026-01-31T09:40:00+03:00",
+      "documented_at": "2026-01-31T12:00:00+03:00",
+      "description": "Gastric lesion biopsied and specimen sent to pathology.",
+      "source_document_id": "DOC-003-05"
+    },
+    {
+      "id": "EVT-003-03",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-04",
+      "event_type": "result_finalized",
+      "occurred_at": "2026-02-02T09:40:00+03:00",
+      "documented_at": "2026-02-02T12:00:00+03:00",
+      "description": "Abnormal pathology result finalized and routed.",
+      "source_document_id": "DOC-003-07"
+    },
+    {
+      "id": "EVT-003-04",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-05",
+      "event_type": "follow_up_gap",
+      "occurred_at": "2026-02-08T09:40:00+03:00",
+      "documented_at": "2026-02-08T12:00:00+03:00",
+      "description": "Follow-up note omits the finalized pathology result.",
+      "source_document_id": "DOC-003-10"
+    },
+    {
+      "id": "EVT-003-05",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-06",
+      "event_type": "referral_delay",
+      "occurred_at": "2026-03-05T09:40:00+03:00",
+      "documented_at": "2026-03-05T12:00:00+03:00",
+      "description": "Referral remains unbooked and communication is undocumented.",
+      "source_document_id": "DOC-003-13"
+    },
+    {
+      "id": "EVT-003-06",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-07",
+      "event_type": "specialist_review",
+      "occurred_at": "2026-04-14T09:40:00+03:00",
+      "documented_at": "2026-04-14T12:00:00+03:00",
+      "description": "Delayed specialist review discusses the result.",
+      "source_document_id": "DOC-003-14"
+    }
+  ],
+  "observations": [
+    {
+      "id": "LAB-003-01-01",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-01",
+      "test_code": "HEMOGLOBIN",
+      "test_name": "Hemoglobin",
+      "value_numeric": 10.8,
+      "value_text": null,
+      "unit": "g/dL",
+      "reference_range_low": 12.0,
+      "reference_range_high": 16.0,
+      "status": "final",
+      "specimen_collected_at": "2026-01-10T08:30:00+03:00",
+      "reported_at": "2026-01-10T11:00:00+03:00",
+      "source_document_id": "DOC-003-02"
+    },
+    {
+      "id": "LAB-003-01-02",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-01",
+      "test_code": "MCV",
+      "test_name": "MCV",
+      "value_numeric": 78,
+      "value_text": null,
+      "unit": "fL",
+      "reference_range_low": 80,
+      "reference_range_high": 100,
+      "status": "final",
+      "specimen_collected_at": "2026-01-10T08:30:00+03:00",
+      "reported_at": "2026-01-10T11:00:00+03:00",
+      "source_document_id": "DOC-003-02"
+    },
+    {
+      "id": "LAB-003-01-03",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-01",
+      "test_code": "FERRITIN",
+      "test_name": "Ferritin",
+      "value_numeric": 9,
+      "value_text": null,
+      "unit": "ng/mL",
+      "reference_range_low": 15,
+      "reference_range_high": 150,
+      "status": "final",
+      "specimen_collected_at": "2026-01-10T08:30:00+03:00",
+      "reported_at": "2026-01-10T11:00:00+03:00",
+      "source_document_id": "DOC-003-02"
+    },
+    {
+      "id": "LAB-003-02-01",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-06",
+      "test_code": "HEMOGLOBIN",
+      "test_name": "Hemoglobin",
+      "value_numeric": 11.4,
+      "value_text": null,
+      "unit": "g/dL",
+      "reference_range_low": 12.0,
+      "reference_range_high": 16.0,
+      "status": "final",
+      "specimen_collected_at": "2026-03-05T08:30:00+03:00",
+      "reported_at": "2026-03-05T11:00:00+03:00",
+      "source_document_id": "DOC-003-16"
+    },
+    {
+      "id": "LAB-003-02-02",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-06",
+      "test_code": "MCV",
+      "test_name": "MCV",
+      "value_numeric": 81,
+      "value_text": null,
+      "unit": "fL",
+      "reference_range_low": 80,
+      "reference_range_high": 100,
+      "status": "final",
+      "specimen_collected_at": "2026-03-05T08:30:00+03:00",
+      "reported_at": "2026-03-05T11:00:00+03:00",
+      "source_document_id": "DOC-003-16"
+    },
+    {
+      "id": "LAB-003-02-03",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-06",
+      "test_code": "FERRITIN",
+      "test_name": "Ferritin",
+      "value_numeric": 14,
+      "value_text": null,
+      "unit": "ng/mL",
+      "reference_range_low": 15,
+      "reference_range_high": 150,
+      "status": "final",
+      "specimen_collected_at": "2026-03-05T08:30:00+03:00",
+      "reported_at": "2026-03-05T11:00:00+03:00",
+      "source_document_id": "DOC-003-16"
+    }
+  ],
+  "medications": [
+    {
+      "id": "MED-003-01",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-05",
+      "medication_name": "Ferrous sulfate 325 mg",
+      "generic_name": "ferrous sulfate",
+      "dose": 325,
+      "dose_unit": "mg",
+      "route": "oral",
+      "frequency": "every other day",
+      "start_at": "2026-02-08",
+      "end_at": null,
+      "status": "active",
+      "prescriber": "Dr. Hana Tesfaye",
+      "ordered_at": "2026-01-10T09:00:00+03:00",
+      "source_document_id": "DOC-003-17"
+    },
+    {
+      "id": "MED-003-02",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-07",
+      "medication_name": "Ferrous sulfate 325 mg",
+      "generic_name": "ferrous sulfate",
+      "dose": 325,
+      "dose_unit": "mg",
+      "route": "oral",
+      "frequency": "every other day",
+      "start_at": "2026-02-08",
+      "end_at": null,
+      "status": "active",
+      "prescriber": "Dr. Hana Tesfaye",
+      "ordered_at": "2026-02-08T09:00:00+03:00",
+      "source_document_id": "DOC-003-15"
+    },
+    {
+      "id": "MED-003-03",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-01",
+      "medication_name": "Omeprazole 20 mg",
+      "generic_name": "omeprazole",
+      "dose": 20,
+      "dose_unit": "mg",
+      "route": "oral",
+      "frequency": "once daily",
+      "start_at": "2026-01-10",
+      "end_at": null,
+      "status": "active",
+      "prescriber": "Dr. Hana Tesfaye",
+      "ordered_at": "2026-01-10T09:00:00+03:00",
+      "source_document_id": "DOC-003-01"
+    },
+    {
+      "id": "MED-003-04",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-07",
+      "medication_name": "Omeprazole 20 mg",
+      "generic_name": "omeprazole",
+      "dose": 20,
+      "dose_unit": "mg",
+      "route": "oral",
+      "frequency": "once daily",
+      "start_at": "2026-01-10",
+      "end_at": null,
+      "status": "active",
+      "prescriber": "Dr. Hana Tesfaye",
+      "ordered_at": "2026-01-24T09:00:00+03:00",
+      "source_document_id": "DOC-003-14"
+    },
+    {
+      "id": "MED-003-05",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-02",
+      "medication_name": "Bismuth subsalicylate",
+      "generic_name": "bismuth",
+      "dose": 262,
+      "dose_unit": "mg",
+      "route": "oral",
+      "frequency": "as needed",
+      "start_at": "2026-01-24",
+      "end_at": null,
+      "status": "active",
+      "prescriber": "Dr. Hana Tesfaye",
+      "ordered_at": "2026-02-08T09:00:00+03:00",
+      "source_document_id": "DOC-003-03"
+    }
+  ],
+  "documents": [
+    {
+      "id": "DOC-003-01",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-01",
+      "document_type": "progress_note",
+      "title": "Initial anemia consultation",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-01-10T09:40:00+03:00",
+      "authored_at": "2026-01-10T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-01.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-01\nSix weeks of intermittent dark stools and fatigue. CBC shows iron deficiency pattern. Refer for upper endoscopy; the reason is evaluation of possible gastrointestinal blood loss.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-003-02",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-01",
+      "document_type": "laboratory_report",
+      "title": "Baseline complete blood count",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-01-10T09:40:00+03:00",
+      "authored_at": "2026-01-10T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-02.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-01\nHemoglobin 10.8 g/dL; MCV 78 fL; ferritin 9 ng/mL. Results are final.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-003-03",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-02",
+      "document_type": "specialist_consult",
+      "title": "Gastroenterology consultation",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-01-24T09:40:00+03:00",
+      "authored_at": "2026-01-24T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-03.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-02\nPersistent fatigue and intermittent dark stools. Endoscopy recommended to evaluate suspected source of iron deficiency; consent discussed.",
+      "metadata": {
+        "department": "Gastroenterology",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-003-04",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-02",
+      "document_type": "procedure_order",
+      "title": "Upper endoscopy order",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-01-24T09:40:00+03:00",
+      "authored_at": "2026-01-24T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-04.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-02\nIndication: iron deficiency anemia and intermittent dark stool. Specimens may be submitted if mucosal abnormality is identified.",
+      "metadata": {
+        "department": "Gastroenterology",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-003-05",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-03",
+      "document_type": "procedure_note",
+      "title": "Upper endoscopy procedure note",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-01-31T09:40:00+03:00",
+      "authored_at": "2026-01-31T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-05.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-03\nA 7 mm gastric antral lesion was biopsied. Specimen labeled gastric antrum biopsy and sent to pathology. Endoscopist recommends review of pathology when finalized.",
+      "metadata": {
+        "department": "Endoscopy",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-003-06",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-03",
+      "document_type": "specimen_record",
+      "title": "Specimen collection record",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-01-31T09:40:00+03:00",
+      "authored_at": "2026-01-31T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-06.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-03\nGastric antrum biopsy collected 2026-01-31 at 10:05 and accessioned as SP-003-01.",
+      "metadata": {
+        "department": "Endoscopy",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-003-07",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-04",
+      "document_type": "pathology_report",
+      "title": "Gastric biopsy pathology report",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-02-02T09:40:00+03:00",
+      "authored_at": "2026-02-02T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-07.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-04\nFinal diagnosis: gastric intestinal metaplasia with focal indefinite atypia; no invasive malignancy identified in this specimen. Recommendation: gastroenterology review and interval follow-up.",
+      "metadata": {
+        "department": "Pathology",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-003-08",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-04",
+      "document_type": "result_notification",
+      "title": "Pathology result routing record",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-02-02T09:40:00+03:00",
+      "authored_at": "2026-02-02T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-08.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-04\nResult routed electronically to the ordering gastroenterologist and primary-care inbox. Routing status marked delivered; this field does not document patient discussion.",
+      "metadata": {
+        "department": "Pathology",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-003-09",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-04",
+      "document_type": "administrative_workflow",
+      "title": "Result management work queue",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-02-02T09:40:00+03:00",
+      "authored_at": "2026-02-02T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-09.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-04\nAbnormal pathology result marked reviewed/closed in the administrative queue on 2026-02-06. No linked telephone note or patient communication is present in this record.",
+      "metadata": {
+        "department": "Pathology",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-003-10",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-05",
+      "document_type": "progress_note",
+      "title": "Primary care follow-up",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-02-08T09:40:00+03:00",
+      "authored_at": "2026-02-08T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-10.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-05\nPatient reports fatigue continues. The note reviews anemia and iron replacement but does not mention the finalized gastric pathology result or a gastroenterology follow-up plan.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-003-11",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-05",
+      "document_type": "referral_order",
+      "title": "Gastroenterology follow-up referral",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-02-08T09:40:00+03:00",
+      "authored_at": "2026-02-08T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-11.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-05\nReferral placed for follow-up of gastric biopsy and anemia; scheduling status pending.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-003-12",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-06",
+      "document_type": "progress_note",
+      "title": "Routine follow-up without pathology discussion",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-03-05T09:40:00+03:00",
+      "authored_at": "2026-03-05T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-12.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-06\nFatigue persists. No documentation of pathology communication, repeat endoscopy planning, or completed specialist appointment.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-003-13",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-06",
+      "document_type": "scheduling_record",
+      "title": "Referral scheduling record",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-03-05T09:40:00+03:00",
+      "authored_at": "2026-03-05T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-13.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-06\nReferral remains unbooked after two outreach attempts; patient contact outcome is not documented.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-003-14",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-07",
+      "document_type": "specialist_consult",
+      "title": "Delayed gastroenterology review",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-04-14T09:40:00+03:00",
+      "authored_at": "2026-04-14T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-14.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-07\nPatient is seen after referral delay. The prior pathology report is reviewed today; follow-up endoscopic surveillance is discussed. The record cannot establish when the patient first learned of the result.",
+      "metadata": {
+        "department": "Gastroenterology",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-003-15",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-07",
+      "document_type": "patient_instruction",
+      "title": "Follow-up instructions",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-04-14T09:40:00+03:00",
+      "authored_at": "2026-04-14T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-15.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-07\nDiscussed pathology finding and need for gastroenterology surveillance. Patient given written instructions.",
+      "metadata": {
+        "department": "Gastroenterology",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-003-16",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-07",
+      "document_type": "laboratory_report",
+      "title": "Follow-up blood count",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-04-14T09:40:00+03:00",
+      "authored_at": "2026-04-14T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-16.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-07\nHemoglobin 11.4 g/dL; MCV 81 fL; ferritin 14 ng/mL. Results are final.",
+      "metadata": {
+        "department": "Gastroenterology",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-003-17",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-05",
+      "document_type": "medication_reconciliation",
+      "title": "Iron medication reconciliation",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-02-08T09:40:00+03:00",
+      "authored_at": "2026-02-08T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-17.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-05\nPatient reports taking oral iron every other day; no medication explains the pathology workflow discrepancy.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-003-18",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-07",
+      "document_type": "referral_letter",
+      "title": "Surveillance referral letter",
+      "author": "Dr. Hana Tesfaye",
+      "event_at": "2026-04-14T09:40:00+03:00",
+      "authored_at": "2026-04-14T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-003/documents/DOC-003-18.pdf",
+      "text_content": "SYNTHETIC - NOT FOR CLINICAL USE\nPatient: SYN-003 | Encounter: ENC-003-07\nReferral reason: gastric intestinal metaplasia with focal indefinite atypia and delayed follow-up documentation.",
+      "metadata": {
+        "department": "Gastroenterology",
+        "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE"
+      }
+    }
+  ],
+  "imaging_studies": [],
+  "imaging_assets": [],
+  "referrals": [
+    {
+      "id": "REF-003-01",
+      "encounter_id": "ENC-003-05",
+      "referring_department": "Primary Care",
+      "referred_department": "Gastroenterology",
+      "reason": "Follow-up of gastric biopsy",
+      "ordered_at": "2026-02-08T09:00:00+03:00",
+      "appointment_at": "2026-04-14T09:00:00+03:00",
+      "status": "completed",
+      "patient_id": "SYN-003"
+    }
+  ],
+  "diagnoses": [
+    {
+      "id": "DX-003-01",
+      "encounter_id": "ENC-003-01",
+      "name": "Iron deficiency anemia",
+      "code_system": "ICD-10-CM",
+      "code": "D50.9",
+      "status": "confirmed",
+      "diagnosed_at": "2026-01-10",
+      "patient_id": "SYN-003"
+    }
+  ],
+  "symptoms": [
+    {
+      "id": "SYM-003-01",
+      "encounter_id": "ENC-003-01",
+      "name": "Fatigue",
+      "onset_at": "2025-12-01T08:00:00+03:00",
+      "severity": "moderate",
+      "frequency": "intermittent",
+      "status": "active",
+      "description": "Patient-reported fatigue.",
+      "patient_id": "SYN-003"
+    }
+  ],
+  "diagnostic_reports": [
+    {
+      "id": "RPT-003-01",
+      "patient_id": "SYN-003",
+      "encounter_id": "ENC-003-04",
+      "report_type": "pathology",
+      "title": "Gastric biopsy pathology report",
+      "status": "final",
+      "issued_at": "2026-02-02T11:00:00+03:00",
+      "conclusion": "Abnormal finding requiring clinical follow-up; no invasive malignancy identified in this specimen.",
+      "document_id": "DOC-003-07",
+      "observation_ids": [],
+      "imaging_study_id": null
+    }
+  ]
+}

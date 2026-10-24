@@ -1,0 +1,365 @@
+{
+  "case_id": "CASE-002",
+  "version": "1.0",
+  "synthetic_label": "SYNTHETIC - NOT FOR CLINICAL USE",
+  "case_sha256": "bb76fa11c4b225932deb36089de1f6f66f9307ad3190707b785949a0691dd938",
+  "generator": "scripts/generate_case002.py",
+  "counts": {
+    "encounters": 7,
+    "clinical_events": 6,
+    "observations": 25,
+    "medications": 11,
+    "documents": 20,
+    "imaging_studies": 0,
+    "imaging_assets": 0,
+    "referrals": 1,
+    "diagnoses": 3,
+    "symptoms": 1,
+    "diagnostic_reports": 5
+  },
+  "assets": [
+    {
+      "id": "DOC-002-01",
+      "storage_path": "cases/CASE-002/documents/DOC-002-01.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "1713a4243edf510249e4adfca12086024c01e971da8ab1df22cd421c26e2a365",
+      "byte_size": 2046,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-01",
+      "event_at": "2026-01-08T09:40:00+03:00",
+      "authored_at": "2026-01-08T12:10:00+03:00",
+      "linked_record_ids": [
+        "EVT-002-01",
+        "MED-002-01",
+        "MED-002-04"
+      ]
+    },
+    {
+      "id": "DOC-002-02",
+      "storage_path": "cases/CASE-002/documents/DOC-002-02.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "1c1ea5d6ff9bff45c73631001bb2aff07483cc9a8feeee53ff5f3d7409ae41b6",
+      "byte_size": 1921,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-01",
+      "event_at": "2026-01-08T09:20:00+03:00",
+      "authored_at": "2026-01-08T11:00:00+03:00",
+      "linked_record_ids": [
+        "LAB-002-01-01",
+        "LAB-002-01-02",
+        "LAB-002-01-03",
+        "LAB-002-01-04",
+        "LAB-002-01-05",
+        "RPT-002-01"
+      ]
+    },
+    {
+      "id": "DOC-002-03",
+      "storage_path": "cases/CASE-002/documents/DOC-002-03.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "78a57811807d508475e38d1cb3ef8dd4245968df27e646dbca72120f0ad3562d",
+      "byte_size": 2025,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-02",
+      "event_at": "2026-02-12T09:40:00+03:00",
+      "authored_at": "2026-02-12T12:00:00+03:00",
+      "linked_record_ids": [
+        "EVT-002-02"
+      ]
+    },
+    {
+      "id": "DOC-002-04",
+      "storage_path": "cases/CASE-002/documents/DOC-002-04.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "58be70f2d3fedad1a03734096868b36555910b2290f7345ac26fa946fe339d4b",
+      "byte_size": 2021,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-02",
+      "event_at": "2026-02-12T09:15:00+03:00",
+      "authored_at": "2026-02-12T11:30:00+03:00",
+      "linked_record_ids": []
+    },
+    {
+      "id": "DOC-002-05",
+      "storage_path": "cases/CASE-002/documents/DOC-002-05.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "bcf58e3593148c9bfaf97b546d734983bf0709eac716f4e8794aefac34d8bd3d",
+      "byte_size": 1937,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-02",
+      "event_at": "2026-02-12T09:45:00+03:00",
+      "authored_at": "2026-02-12T09:45:00+03:00",
+      "linked_record_ids": [
+        "MED-002-03"
+      ]
+    },
+    {
+      "id": "DOC-002-06",
+      "storage_path": "cases/CASE-002/documents/DOC-002-06.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "b87e2d2bc72611bc75ad3cb91a7159eb90b044c0260138777b78d50ffbc9f0df",
+      "byte_size": 1968,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-02",
+      "event_at": "2026-02-12T09:46:00+03:00",
+      "authored_at": "2026-02-12T09:46:00+03:00",
+      "linked_record_ids": [
+        "MED-002-02"
+      ]
+    },
+    {
+      "id": "DOC-002-07",
+      "storage_path": "cases/CASE-002/documents/DOC-002-07.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "1b1b852de57e1526b521c92329b1a1eb8a8799d95f186a86414b9c88699fef01",
+      "byte_size": 2098,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-03",
+      "event_at": "2026-03-03T20:10:00+03:00",
+      "authored_at": "2026-03-03T23:00:00+03:00",
+      "linked_record_ids": [
+        "EVT-002-03"
+      ]
+    },
+    {
+      "id": "DOC-002-08",
+      "storage_path": "cases/CASE-002/documents/DOC-002-08.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "f03c4518a2e4a39683371fbe4acb9e2b594ade9f18a65ce96eba0074119ba921",
+      "byte_size": 1992,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-03",
+      "event_at": "2026-03-03T19:00:00+03:00",
+      "authored_at": "2026-03-03T22:20:00+03:00",
+      "linked_record_ids": [
+        "MED-002-05",
+        "MED-002-06"
+      ]
+    },
+    {
+      "id": "DOC-002-09",
+      "storage_path": "cases/CASE-002/documents/DOC-002-09.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "6a179136ced754dc63f29bb932173bb49fb2082f18853f4e98571ff77cf8538f",
+      "byte_size": 1956,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-03",
+      "event_at": "2026-03-03T22:45:00+03:00",
+      "authored_at": "2026-03-04T08:00:00+03:00",
+      "linked_record_ids": []
+    },
+    {
+      "id": "DOC-002-10",
+      "storage_path": "cases/CASE-002/documents/DOC-002-10.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "0f6e5f2983cd902813c0cb105fef5116446017ac9d53a996d3cbd0dadff145e6",
+      "byte_size": 1919,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-04",
+      "event_at": "2026-03-10T08:25:00+03:00",
+      "authored_at": "2026-03-10T10:00:00+03:00",
+      "linked_record_ids": [
+        "LAB-002-02-01",
+        "LAB-002-02-02",
+        "LAB-002-02-03",
+        "LAB-002-02-04",
+        "LAB-002-02-05",
+        "RPT-002-02"
+      ]
+    },
+    {
+      "id": "DOC-002-11",
+      "storage_path": "cases/CASE-002/documents/DOC-002-11.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "811d6a23560734c7480b7cd0f78449c4c383d2a35b94fa9097c975315fb9e276",
+      "byte_size": 2103,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-05",
+      "event_at": "2026-03-18T14:35:00+03:00",
+      "authored_at": "2026-03-18T17:00:00+03:00",
+      "linked_record_ids": [
+        "EVT-002-04",
+        "MED-002-08"
+      ]
+    },
+    {
+      "id": "DOC-002-12",
+      "storage_path": "cases/CASE-002/documents/DOC-002-12.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "1ab9f11b8991a319af58ee55960153cb02c747a41037d1f5bd27b41bf2b1ac0d",
+      "byte_size": 1981,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-05",
+      "event_at": "2026-03-18T14:10:00+03:00",
+      "authored_at": "2026-03-18T16:30:00+03:00",
+      "linked_record_ids": [
+        "MED-002-07"
+      ]
+    },
+    {
+      "id": "DOC-002-13",
+      "storage_path": "cases/CASE-002/documents/DOC-002-13.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "34c46be535486aac9dd408762a77dd09194bb881aa0fd3cff3be29715a3a6abd",
+      "byte_size": 1923,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-05",
+      "event_at": "2026-03-18T14:20:00+03:00",
+      "authored_at": "2026-03-18T16:00:00+03:00",
+      "linked_record_ids": [
+        "LAB-002-03-01",
+        "LAB-002-03-02",
+        "LAB-002-03-03",
+        "LAB-002-03-04",
+        "LAB-002-03-05",
+        "RPT-002-03"
+      ]
+    },
+    {
+      "id": "DOC-002-14",
+      "storage_path": "cases/CASE-002/documents/DOC-002-14.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "835e1e46b41789413a321f2216dc7efe60c40beb751d058dde61374e5b80100f",
+      "byte_size": 2089,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-06",
+      "event_at": "2026-04-02T10:35:00+03:00",
+      "authored_at": "2026-04-02T13:15:00+03:00",
+      "linked_record_ids": [
+        "EVT-002-05"
+      ]
+    },
+    {
+      "id": "DOC-002-15",
+      "storage_path": "cases/CASE-002/documents/DOC-002-15.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "e4b5928a75dc6f60373398ab0e58da74dad0201ea54da2da6cce6c5c93ebb220",
+      "byte_size": 1995,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-06",
+      "event_at": "2026-04-02T10:20:00+03:00",
+      "authored_at": "2026-04-02T12:30:00+03:00",
+      "linked_record_ids": [
+        "MED-002-09"
+      ]
+    },
+    {
+      "id": "DOC-002-16",
+      "storage_path": "cases/CASE-002/documents/DOC-002-16.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "3a09dab0d4ac3626c3c3de585c243a858aa865f81858684c5f2629d8f5188d4a",
+      "byte_size": 1906,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-06",
+      "event_at": "2026-04-02T10:10:00+03:00",
+      "authored_at": "2026-04-02T12:00:00+03:00",
+      "linked_record_ids": [
+        "LAB-002-04-01",
+        "LAB-002-04-02",
+        "LAB-002-04-03",
+        "LAB-002-04-04",
+        "LAB-002-04-05",
+        "RPT-002-04"
+      ]
+    },
+    {
+      "id": "DOC-002-17",
+      "storage_path": "cases/CASE-002/documents/DOC-002-17.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "914e87ab9a7bd6d28bd925530ba30e1c68efbb64daf0ba5fcba236399125eed1",
+      "byte_size": 2036,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-07",
+      "event_at": "2026-05-14T09:55:00+03:00",
+      "authored_at": "2026-05-14T12:00:00+03:00",
+      "linked_record_ids": [
+        "EVT-002-06",
+        "MED-002-10",
+        "MED-002-11"
+      ]
+    },
+    {
+      "id": "DOC-002-18",
+      "storage_path": "cases/CASE-002/documents/DOC-002-18.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "7305409c011e40729c61ae101750e324ad1190ae992e46f9ae270c52a5abd434",
+      "byte_size": 1903,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-07",
+      "event_at": "2026-05-14T09:40:00+03:00",
+      "authored_at": "2026-05-14T11:00:00+03:00",
+      "linked_record_ids": [
+        "LAB-002-05-01",
+        "LAB-002-05-02",
+        "LAB-002-05-03",
+        "LAB-002-05-04",
+        "LAB-002-05-05",
+        "RPT-002-05"
+      ]
+    },
+    {
+      "id": "DOC-002-19",
+      "storage_path": "cases/CASE-002/documents/DOC-002-19.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "97f3d18eca507b772d6dd140250be1e793290a72cf8ae46ecad19b04dfbaf3ba",
+      "byte_size": 1978,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-05",
+      "event_at": "2026-03-18T14:45:00+03:00",
+      "authored_at": "2026-03-18T17:00:00+03:00",
+      "linked_record_ids": []
+    },
+    {
+      "id": "DOC-002-20",
+      "storage_path": "cases/CASE-002/documents/DOC-002-20.pdf",
+      "mime_type": "application/pdf",
+      "sha256": "0a7bc63bd6979753bf6a196fc1e66a12026d458df538ea072cb2e973a0a325c7",
+      "byte_size": 1985,
+      "patient_id": "SYN-002",
+      "source_version": 1,
+      "page_count": 1,
+      "encounter_id": "ENC-002-06",
+      "event_at": "2026-03-20T09:00:00+03:00",
+      "authored_at": "2026-03-20T09:00:00+03:00",
+      "linked_record_ids": []
+    }
+  ]
+}

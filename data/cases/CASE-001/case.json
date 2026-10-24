@@ -1,0 +1,1303 @@
+{
+  "case_id": "CASE-001",
+  "version": "1.1",
+  "status": "ready",
+  "created_at": "2026-10-21T09:00:00+03:00",
+  "updated_at": "2026-10-22T14:00:00+03:00",
+  "patient": {
+    "id": "SYN-001",
+    "synthetic_identifier": "MRN-SYN-000001",
+    "display_name": "Daniel M. (synthetic)",
+    "date_of_birth": "1978-10-06",
+    "sex": "male"
+  },
+  "encounters": [
+    {
+      "id": "ENC-001-01",
+      "patient_id": "SYN-001",
+      "encounter_type": "outpatient",
+      "department": "Primary Care",
+      "provider_name": "Dr Mira Vale (fictional)",
+      "started_at": "2026-01-08T09:00:00+03:00",
+      "ended_at": "2026-01-08T12:30:00+03:00",
+      "status": "completed"
+    },
+    {
+      "id": "ENC-001-02",
+      "patient_id": "SYN-001",
+      "encounter_type": "outpatient",
+      "department": "Primary Care",
+      "provider_name": "Dr Mira Vale (fictional)",
+      "started_at": "2026-02-12T09:00:00+03:00",
+      "ended_at": "2026-02-12T12:30:00+03:00",
+      "status": "completed"
+    },
+    {
+      "id": "ENC-001-03",
+      "patient_id": "SYN-001",
+      "encounter_type": "outpatient",
+      "department": "Primary Care",
+      "provider_name": "Dr Mira Vale (fictional)",
+      "started_at": "2026-03-19T09:00:00+03:00",
+      "ended_at": "2026-03-19T12:30:00+03:00",
+      "status": "completed"
+    },
+    {
+      "id": "ENC-001-04",
+      "patient_id": "SYN-001",
+      "encounter_type": "outpatient",
+      "department": "Primary Care",
+      "provider_name": "Dr Mira Vale (fictional)",
+      "started_at": "2026-04-30T09:00:00+03:00",
+      "ended_at": "2026-04-30T12:30:00+03:00",
+      "status": "completed"
+    },
+    {
+      "id": "ENC-001-05",
+      "patient_id": "SYN-001",
+      "encounter_type": "specialist",
+      "department": "Internal Medicine",
+      "provider_name": "Dr Leon Ash (fictional)",
+      "started_at": "2026-06-04T09:00:00+03:00",
+      "ended_at": "2026-06-04T12:30:00+03:00",
+      "status": "completed"
+    },
+    {
+      "id": "ENC-001-06",
+      "patient_id": "SYN-001",
+      "encounter_type": "outpatient",
+      "department": "Urgent Assessment",
+      "provider_name": "Dr Nia Reed (fictional)",
+      "started_at": "2026-07-08T09:00:00+03:00",
+      "ended_at": "2026-07-08T12:30:00+03:00",
+      "status": "completed"
+    },
+    {
+      "id": "ENC-001-07",
+      "patient_id": "SYN-001",
+      "encounter_type": "specialist",
+      "department": "Respiratory Medicine",
+      "provider_name": "Dr Ivo Fern (fictional)",
+      "started_at": "2026-07-22T09:00:00+03:00",
+      "ended_at": "2026-07-22T12:30:00+03:00",
+      "status": "completed"
+    }
+  ],
+  "clinical_events": [
+    {
+      "id": "EVT-001-01",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-01",
+      "event_type": "symptom",
+      "occurred_at": "2026-01-08T09:10:00+03:00",
+      "documented_at": "2026-01-08T12:45:00+03:00",
+      "description": "Patient reports dry cough for about ten days.",
+      "source_document_id": "DOC-001-08"
+    },
+    {
+      "id": "EVT-001-02",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-02",
+      "event_type": "medication_change",
+      "occurred_at": "2026-02-12T09:45:00+03:00",
+      "documented_at": "2026-02-12T12:45:00+03:00",
+      "description": "Lisinopril prescribed; intended start February 13, ingestion not observed.",
+      "source_document_id": "DOC-001-22"
+    },
+    {
+      "id": "EVT-001-03",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-03",
+      "event_type": "test_result",
+      "occurred_at": "2026-03-19T12:00:00+03:00",
+      "documented_at": "2026-03-19T12:45:00+03:00",
+      "description": "Chest radiograph report finalized with right basal opacity.",
+      "source_document_id": "DOC-001-18"
+    },
+    {
+      "id": "EVT-001-04",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-03",
+      "event_type": "follow_up",
+      "occurred_at": "2026-03-19T16:00:00+03:00",
+      "documented_at": "2026-03-19T16:15:00+03:00",
+      "description": "Repeat chest radiograph due April 30; patient informed.",
+      "source_document_id": "DOC-001-09"
+    },
+    {
+      "id": "EVT-001-05",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-04",
+      "event_type": "procedure",
+      "occurred_at": "2026-04-30T10:00:00+03:00",
+      "documented_at": "2026-04-30T12:45:00+03:00",
+      "description": "Repeat chest radiograph performed.",
+      "source_document_id": "DOC-001-19"
+    },
+    {
+      "id": "EVT-001-06",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-05",
+      "event_type": "clinical_observation",
+      "occurred_at": "2026-06-04T09:40:00+03:00",
+      "documented_at": "2026-06-04T12:45:00+03:00",
+      "description": "Consultation records cough onset as May 26, with possible medication or reflux contribution.",
+      "source_document_id": "DOC-001-05"
+    },
+    {
+      "id": "EVT-001-07",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-06",
+      "event_type": "medication_change",
+      "occurred_at": "2026-07-08T12:00:00+03:00",
+      "documented_at": "2026-07-08T12:45:00+03:00",
+      "description": "Lisinopril discontinued; losartan prescribed from July 9.",
+      "source_document_id": "DOC-001-23"
+    },
+    {
+      "id": "EVT-001-08",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-07",
+      "event_type": "follow_up",
+      "occurred_at": "2026-07-22T09:40:00+03:00",
+      "documented_at": "2026-07-22T12:45:00+03:00",
+      "description": "CT chest booked for July 29; no completed CT or spirometry result in supplied record.",
+      "source_document_id": "DOC-001-07"
+    }
+  ],
+  "observations": [
+    {
+      "id": "LAB-001-01",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-02",
+      "test_code": "HGB",
+      "test_name": "Hemoglobin",
+      "value_numeric": 14.1,
+      "unit": "g/dL",
+      "reference_range_low": 13.2,
+      "reference_range_high": 16.6,
+      "status": "final",
+      "specimen_collected_at": "2026-02-12T09:20:00+03:00",
+      "reported_at": "2026-02-12T11:00:00+03:00",
+      "source_document_id": "DOC-001-13"
+    },
+    {
+      "id": "LAB-001-02",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-02",
+      "test_code": "WBC",
+      "test_name": "White blood cells",
+      "value_numeric": 7.2,
+      "unit": "10^9/L",
+      "reference_range_low": 3.4,
+      "reference_range_high": 9.6,
+      "status": "final",
+      "specimen_collected_at": "2026-02-12T09:20:00+03:00",
+      "reported_at": "2026-02-12T11:00:00+03:00",
+      "source_document_id": "DOC-001-13"
+    },
+    {
+      "id": "LAB-001-03",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-02",
+      "test_code": "CRP",
+      "test_name": "C-reactive protein",
+      "value_numeric": 4,
+      "unit": "mg/L",
+      "reference_range_low": 0.0,
+      "reference_range_high": 5.0,
+      "status": "final",
+      "specimen_collected_at": "2026-02-12T09:20:00+03:00",
+      "reported_at": "2026-02-12T11:00:00+03:00",
+      "source_document_id": "DOC-001-13"
+    },
+    {
+      "id": "LAB-001-04",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-02",
+      "test_code": "CREAT",
+      "test_name": "Creatinine",
+      "value_numeric": 0.92,
+      "unit": "mg/dL",
+      "reference_range_low": 0.74,
+      "reference_range_high": 1.35,
+      "status": "final",
+      "specimen_collected_at": "2026-02-12T09:20:00+03:00",
+      "reported_at": "2026-02-12T11:00:00+03:00",
+      "source_document_id": "DOC-001-13"
+    },
+    {
+      "id": "LAB-001-05",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-02",
+      "test_code": "K",
+      "test_name": "Potassium",
+      "value_numeric": 4.2,
+      "unit": "mmol/L",
+      "reference_range_low": 3.6,
+      "reference_range_high": 5.2,
+      "status": "final",
+      "specimen_collected_at": "2026-02-12T09:20:00+03:00",
+      "reported_at": "2026-02-12T11:00:00+03:00",
+      "source_document_id": "DOC-001-13"
+    },
+    {
+      "id": "LAB-001-06",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-03",
+      "test_code": "HGB",
+      "test_name": "Hemoglobin",
+      "value_numeric": 13.6,
+      "unit": "g/dL",
+      "reference_range_low": 13.2,
+      "reference_range_high": 16.6,
+      "status": "final",
+      "specimen_collected_at": "2026-03-19T09:20:00+03:00",
+      "reported_at": "2026-03-19T11:00:00+03:00",
+      "source_document_id": "DOC-001-14"
+    },
+    {
+      "id": "LAB-001-07",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-03",
+      "test_code": "WBC",
+      "test_name": "White blood cells",
+      "value_numeric": 8.0,
+      "unit": "10^9/L",
+      "reference_range_low": 3.4,
+      "reference_range_high": 9.6,
+      "status": "final",
+      "specimen_collected_at": "2026-03-19T09:20:00+03:00",
+      "reported_at": "2026-03-19T11:00:00+03:00",
+      "source_document_id": "DOC-001-14"
+    },
+    {
+      "id": "LAB-001-08",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-03",
+      "test_code": "CRP",
+      "test_name": "C-reactive protein",
+      "value_numeric": 12,
+      "unit": "mg/L",
+      "reference_range_low": 0.0,
+      "reference_range_high": 5.0,
+      "status": "final",
+      "specimen_collected_at": "2026-03-19T09:20:00+03:00",
+      "reported_at": "2026-03-19T11:00:00+03:00",
+      "source_document_id": "DOC-001-14"
+    },
+    {
+      "id": "LAB-001-09",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-03",
+      "test_code": "CREAT",
+      "test_name": "Creatinine",
+      "value_numeric": 0.96,
+      "unit": "mg/dL",
+      "reference_range_low": 0.74,
+      "reference_range_high": 1.35,
+      "status": "final",
+      "specimen_collected_at": "2026-03-19T09:20:00+03:00",
+      "reported_at": "2026-03-19T11:00:00+03:00",
+      "source_document_id": "DOC-001-14"
+    },
+    {
+      "id": "LAB-001-10",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-03",
+      "test_code": "K",
+      "test_name": "Potassium",
+      "value_numeric": 4.4,
+      "unit": "mmol/L",
+      "reference_range_low": 3.6,
+      "reference_range_high": 5.2,
+      "status": "final",
+      "specimen_collected_at": "2026-03-19T09:20:00+03:00",
+      "reported_at": "2026-03-19T11:00:00+03:00",
+      "source_document_id": "DOC-001-14"
+    },
+    {
+      "id": "LAB-001-11",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-04",
+      "test_code": "HGB",
+      "test_name": "Hemoglobin",
+      "value_numeric": 13.1,
+      "unit": "g/dL",
+      "reference_range_low": 13.2,
+      "reference_range_high": 16.6,
+      "status": "final",
+      "specimen_collected_at": "2026-04-30T09:20:00+03:00",
+      "reported_at": "2026-04-30T11:00:00+03:00",
+      "source_document_id": "DOC-001-15"
+    },
+    {
+      "id": "LAB-001-12",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-04",
+      "test_code": "WBC",
+      "test_name": "White blood cells",
+      "value_numeric": 8.4,
+      "unit": "10^9/L",
+      "reference_range_low": 3.4,
+      "reference_range_high": 9.6,
+      "status": "final",
+      "specimen_collected_at": "2026-04-30T09:20:00+03:00",
+      "reported_at": "2026-04-30T11:00:00+03:00",
+      "source_document_id": "DOC-001-15"
+    },
+    {
+      "id": "LAB-001-13",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-04",
+      "test_code": "CRP",
+      "test_name": "C-reactive protein",
+      "value_numeric": 18,
+      "unit": "mg/L",
+      "reference_range_low": 0.0,
+      "reference_range_high": 5.0,
+      "status": "final",
+      "specimen_collected_at": "2026-04-30T09:20:00+03:00",
+      "reported_at": "2026-04-30T11:00:00+03:00",
+      "source_document_id": "DOC-001-15"
+    },
+    {
+      "id": "LAB-001-14",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-04",
+      "test_code": "CREAT",
+      "test_name": "Creatinine",
+      "value_numeric": 0.95,
+      "unit": "mg/dL",
+      "reference_range_low": 0.74,
+      "reference_range_high": 1.35,
+      "status": "final",
+      "specimen_collected_at": "2026-04-30T09:20:00+03:00",
+      "reported_at": "2026-04-30T11:00:00+03:00",
+      "source_document_id": "DOC-001-15"
+    },
+    {
+      "id": "LAB-001-15",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-04",
+      "test_code": "K",
+      "test_name": "Potassium",
+      "value_numeric": 4.3,
+      "unit": "mmol/L",
+      "reference_range_low": 3.6,
+      "reference_range_high": 5.2,
+      "status": "final",
+      "specimen_collected_at": "2026-04-30T09:20:00+03:00",
+      "reported_at": "2026-04-30T11:00:00+03:00",
+      "source_document_id": "DOC-001-15"
+    },
+    {
+      "id": "LAB-001-16",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-06",
+      "test_code": "HGB",
+      "test_name": "Hemoglobin",
+      "value_numeric": 12.4,
+      "unit": "g/dL",
+      "reference_range_low": 13.2,
+      "reference_range_high": 16.6,
+      "status": "final",
+      "specimen_collected_at": "2026-07-08T09:20:00+03:00",
+      "reported_at": "2026-07-08T11:00:00+03:00",
+      "source_document_id": "DOC-001-16"
+    },
+    {
+      "id": "LAB-001-17",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-06",
+      "test_code": "WBC",
+      "test_name": "White blood cells",
+      "value_numeric": 9.8,
+      "unit": "10^9/L",
+      "reference_range_low": 3.4,
+      "reference_range_high": 9.6,
+      "status": "final",
+      "specimen_collected_at": "2026-07-08T09:20:00+03:00",
+      "reported_at": "2026-07-08T11:00:00+03:00",
+      "source_document_id": "DOC-001-16"
+    },
+    {
+      "id": "LAB-001-18",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-06",
+      "test_code": "CRP",
+      "test_name": "C-reactive protein",
+      "value_numeric": 31,
+      "unit": "mg/L",
+      "reference_range_low": 0.0,
+      "reference_range_high": 5.0,
+      "status": "final",
+      "specimen_collected_at": "2026-07-08T09:20:00+03:00",
+      "reported_at": "2026-07-08T11:00:00+03:00",
+      "source_document_id": "DOC-001-16"
+    },
+    {
+      "id": "LAB-001-19",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-06",
+      "test_code": "CREAT",
+      "test_name": "Creatinine",
+      "value_numeric": 0.98,
+      "unit": "mg/dL",
+      "reference_range_low": 0.74,
+      "reference_range_high": 1.35,
+      "status": "final",
+      "specimen_collected_at": "2026-07-08T09:20:00+03:00",
+      "reported_at": "2026-07-08T11:00:00+03:00",
+      "source_document_id": "DOC-001-16"
+    },
+    {
+      "id": "LAB-001-20",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-06",
+      "test_code": "K",
+      "test_name": "Potassium",
+      "value_numeric": 4.5,
+      "unit": "mmol/L",
+      "reference_range_low": 3.6,
+      "reference_range_high": 5.2,
+      "status": "final",
+      "specimen_collected_at": "2026-07-08T09:20:00+03:00",
+      "reported_at": "2026-07-08T11:00:00+03:00",
+      "source_document_id": "DOC-001-16"
+    },
+    {
+      "id": "LAB-001-21",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-07",
+      "test_code": "HGB",
+      "test_name": "Hemoglobin",
+      "value_numeric": 12.5,
+      "unit": "g/dL",
+      "reference_range_low": 13.2,
+      "reference_range_high": 16.6,
+      "status": "final",
+      "specimen_collected_at": "2026-07-22T09:20:00+03:00",
+      "reported_at": "2026-07-22T11:00:00+03:00",
+      "source_document_id": "DOC-001-17"
+    },
+    {
+      "id": "LAB-001-22",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-07",
+      "test_code": "WBC",
+      "test_name": "White blood cells",
+      "value_numeric": 9.2,
+      "unit": "10^9/L",
+      "reference_range_low": 3.4,
+      "reference_range_high": 9.6,
+      "status": "final",
+      "specimen_collected_at": "2026-07-22T09:20:00+03:00",
+      "reported_at": "2026-07-22T11:00:00+03:00",
+      "source_document_id": "DOC-001-17"
+    },
+    {
+      "id": "LAB-001-23",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-07",
+      "test_code": "CRP",
+      "test_name": "C-reactive protein",
+      "value_numeric": 28,
+      "unit": "mg/L",
+      "reference_range_low": 0.0,
+      "reference_range_high": 5.0,
+      "status": "final",
+      "specimen_collected_at": "2026-07-22T09:20:00+03:00",
+      "reported_at": "2026-07-22T11:00:00+03:00",
+      "source_document_id": "DOC-001-17"
+    },
+    {
+      "id": "LAB-001-24",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-07",
+      "test_code": "CREAT",
+      "test_name": "Creatinine",
+      "value_numeric": 0.96,
+      "unit": "mg/dL",
+      "reference_range_low": 0.74,
+      "reference_range_high": 1.35,
+      "status": "final",
+      "specimen_collected_at": "2026-07-22T09:20:00+03:00",
+      "reported_at": "2026-07-22T11:00:00+03:00",
+      "source_document_id": "DOC-001-17"
+    },
+    {
+      "id": "LAB-001-25",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-07",
+      "test_code": "K",
+      "test_name": "Potassium",
+      "value_numeric": 4.4,
+      "unit": "mmol/L",
+      "reference_range_low": 3.6,
+      "reference_range_high": 5.2,
+      "status": "final",
+      "specimen_collected_at": "2026-07-22T09:20:00+03:00",
+      "reported_at": "2026-07-22T11:00:00+03:00",
+      "source_document_id": "DOC-001-17"
+    }
+  ],
+  "medications": [
+    {
+      "id": "MED-001-01",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-01",
+      "medication_name": "Omeprazole",
+      "generic_name": "omeprazole",
+      "dose": 20,
+      "dose_unit": "mg",
+      "route": "oral",
+      "frequency": "once_daily",
+      "start_at": "2026-01-09",
+      "end_at": "2026-02-05",
+      "status": "completed",
+      "prescriber": "Dr Mira Vale (fictional)",
+      "ordered_at": "2026-01-08T09:45:00+03:00",
+      "source_document_id": "DOC-001-21"
+    },
+    {
+      "id": "MED-001-02",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-02",
+      "medication_name": "Lisinopril",
+      "generic_name": "lisinopril",
+      "dose": 5,
+      "dose_unit": "mg",
+      "route": "oral",
+      "frequency": "once_daily",
+      "start_at": "2026-02-13",
+      "end_at": null,
+      "status": "ordered",
+      "prescriber": "Dr Mira Vale (fictional)",
+      "ordered_at": "2026-02-12T09:45:00+03:00",
+      "source_document_id": "DOC-001-22"
+    },
+    {
+      "id": "MED-001-03",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-03",
+      "medication_name": "Lisinopril",
+      "generic_name": "lisinopril",
+      "dose": 5,
+      "dose_unit": "mg",
+      "route": "oral",
+      "frequency": "once_daily",
+      "start_at": "2026-02-13",
+      "end_at": null,
+      "status": "active",
+      "prescriber": null,
+      "ordered_at": null,
+      "source_document_id": "DOC-001-03"
+    },
+    {
+      "id": "MED-001-04",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-05",
+      "medication_name": "Omeprazole",
+      "generic_name": "omeprazole",
+      "dose": 20,
+      "dose_unit": "mg",
+      "route": "oral",
+      "frequency": "once_daily",
+      "start_at": "2026-06-05",
+      "end_at": "2026-07-02",
+      "status": "ordered",
+      "prescriber": "Dr Leon Ash (fictional)",
+      "ordered_at": "2026-06-04T09:40:00+03:00",
+      "source_document_id": "DOC-001-05"
+    },
+    {
+      "id": "MED-001-05",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-06",
+      "medication_name": "Lisinopril",
+      "generic_name": "lisinopril",
+      "dose": 5,
+      "dose_unit": "mg",
+      "route": "oral",
+      "frequency": "once_daily",
+      "start_at": "2026-02-13",
+      "end_at": "2026-07-08",
+      "status": "discontinued",
+      "prescriber": null,
+      "ordered_at": null,
+      "source_document_id": "DOC-001-23"
+    },
+    {
+      "id": "MED-001-06",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-06",
+      "medication_name": "Losartan",
+      "generic_name": "losartan",
+      "dose": 25,
+      "dose_unit": "mg",
+      "route": "oral",
+      "frequency": "once_daily",
+      "start_at": "2026-07-09",
+      "end_at": null,
+      "status": "ordered",
+      "prescriber": "Dr Nia Reed (fictional)",
+      "ordered_at": "2026-07-08T12:00:00+03:00",
+      "source_document_id": "DOC-001-23"
+    },
+    {
+      "id": "MED-001-07",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-07",
+      "medication_name": "Losartan",
+      "generic_name": "losartan",
+      "dose": 25,
+      "dose_unit": "mg",
+      "route": "oral",
+      "frequency": "once_daily",
+      "start_at": "2026-07-09",
+      "end_at": null,
+      "status": "active",
+      "prescriber": null,
+      "ordered_at": null,
+      "source_document_id": "DOC-001-12"
+    }
+  ],
+  "documents": [
+    {
+      "id": "DOC-001-01",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-01",
+      "document_type": "progress_note",
+      "title": "Primary care assessment",
+      "author": "Dr Mira Vale (fictional)",
+      "event_at": "2026-01-08T09:40:00+03:00",
+      "authored_at": "2026-01-08T12:45:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-01.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nChief concern: Dry cough and intermittent heartburn.\nHistory: Cough present for about ten days, mainly evenings; no fever, hemoptysis or breathlessness. Never smoked. No previous lung disease. No regular medication and no previous ACE inhibitor use reported. Works at a fictional stationery office; no dust exposure reported. No known drug allergies reported.\nExamination: Temperature 36.7 C, pulse 76/min, BP 148/92 mmHg, oxygen saturation 98% on air. Chest clear. Weight 82.0 kg.\nAssessment: Recent cough with symptomatic reflux; post-viral cough also possible. Elevated office BP requires repeat assessment.\nPlan: Four-week omeprazole trial for heartburn; review persistent cough and repeat BP. Return earlier for breathlessness, blood in sputum or systemic symptoms.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-02",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-02",
+      "document_type": "progress_note",
+      "title": "Blood pressure and symptom review",
+      "author": "Dr Mira Vale (fictional)",
+      "event_at": "2026-02-12T09:40:00+03:00",
+      "authored_at": "2026-02-12T12:45:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-02.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nInterval history: Heartburn improved after the four-week course. Dry cough continues intermittently and has not fully settled. No dyspnea at rest, hemoptysis or fever.\nExamination: BP 152/94 mmHg after rest, pulse 78/min, oxygen saturation 98% on air. Weight 81.5 kg. Chest clear.\nAssessment: Repeated hypertension; cough of uncertain cause.\nPlan: Lisinopril 5 mg once daily prescribed, first intended dose tomorrow. Discuss possible cough as an adverse effect. Renal function and potassium sampled today; repeat at next visit. Chest radiograph requested if cough persists. Medication order is not confirmation of ingestion.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-03",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-03",
+      "document_type": "progress_note",
+      "title": "Persistent cough review",
+      "author": "Dr Mira Vale (fictional)",
+      "event_at": "2026-03-19T09:40:00+03:00",
+      "authored_at": "2026-03-19T12:45:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-03.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nHistory: Reports taking lisinopril since February 13. Cough persists, with occasional scant clear sputum. Heartburn remains better. No fever or hemoptysis.\nFindings: BP 138/86 mmHg, saturation 97% on air, weight 80.8 kg. Faint right basal crackles, no wheeze.\nAssessment: Persistent cough; chest radiograph and blood tests obtained today.\nPlan: Review finalized results; radiograph follow-up will be arranged according to report. Renal function monitoring after starting lisinopril. Return for worsening symptoms.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-04",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-04",
+      "document_type": "progress_note",
+      "title": "Follow-up consultation",
+      "author": "Dr Mira Vale (fictional)",
+      "event_at": "2026-04-30T09:40:00+03:00",
+      "authored_at": "2026-04-30T12:45:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-04.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nHistory: Cough remains daily; has reduced exercise tolerance on stairs. No fever or hemoptysis. Reports regular lisinopril use.\nExamination: BP 136/84 mmHg, saturation 97% on air, weight 79.5 kg; right basal crackles remain subtle.\nAssessment: Persistent respiratory symptoms. Repeat chest radiograph obtained today.\nPlan: Await radiology comparison. Internal medicine review requested. Patient advised to seek urgent review for breathlessness at rest or hemoptysis.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-05",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-05",
+      "document_type": "consultation_note",
+      "title": "Internal medicine consultation",
+      "author": "Dr Leon Ash (fictional)",
+      "event_at": "2026-06-04T09:40:00+03:00",
+      "authored_at": "2026-06-04T12:45:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-05.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nReason for review: Cough, intermittent reflux and worry about work.\nHistory: Cough first began on May 26, 2026; no cough before then. Taking lisinopril 5 mg daily since February. Reports occasional heartburn and poor sleep when anxious. Denies fever and hemoptysis.\nExam: BP 132/82 mmHg, saturation 97% on air, weight 78.8 kg. No wheeze.\nWorking impression: ACE inhibitor-associated cough is possible; reflux and anxiety may amplify symptoms. Previous radiology documents are not attached to this consultation packet.\nPlan: Short symptom diary, trial reflux treatment for recurrent heartburn, arrange medication review and obtain prior imaging reports. No definitive etiology established.\nPrescription MED-001-04: Omeprazole 20 mg orally once daily from June 5 through July 2, ordered today at 09:40 +03:00 for recurrent heartburn.",
+      "metadata": {
+        "department": "Internal Medicine",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-06",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-06",
+      "document_type": "emergency_note",
+      "title": "Urgent ambulatory assessment",
+      "author": "Dr Nia Reed (fictional)",
+      "event_at": "2026-07-08T09:40:00+03:00",
+      "authored_at": "2026-07-08T12:45:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-06.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nPresentation: Increasing cough, fatigue and breathlessness walking uphill. No breathlessness at rest, hemoptysis or fever. Reports ongoing lisinopril use through this morning.\nExam: Temperature 37.0 C, pulse 92/min, BP 130/80 mmHg, oxygen saturation 95% on air, weight 77.0 kg. Right basal crackles without wheeze.\nResults: Blood tests and chest radiograph obtained; see linked reports.\nAssessment: Persistent cough with weight loss and unresolved radiographic abnormality requires expedited respiratory assessment. ACE inhibitor contribution remains possible.\nPlan: Stop lisinopril today; prescribe losartan for BP. Urgent respiratory referral and CT chest requested. Stable for ambulatory follow-up after assessment; explicit return precautions given. No final diagnosis assigned.",
+      "metadata": {
+        "department": "Urgent Assessment",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-07",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-07",
+      "document_type": "specialist_note",
+      "title": "Respiratory consultation",
+      "author": "Dr Ivo Fern (fictional)",
+      "event_at": "2026-07-22T09:40:00+03:00",
+      "authored_at": "2026-07-22T12:45:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-07.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nHistory: Persistent cough and reduced exercise tolerance. Patient reports stopping lisinopril on July 8 and taking losartan thereafter. Cough has not clearly changed over the subsequent two weeks. Reflux symptoms improved with treatment. No hemoptysis.\nExam: BP 132/84 mmHg, saturation 96% on air, weight 77.2 kg; persistent right basal crackles.\nAssessment: Etiology remains unresolved. Focal radiographic opacity and inflammatory-marker trend need further characterization. A short interval after stopping an ACE inhibitor does not settle its contribution. Anxiety may coexist and does not explain the imaging finding by itself.\nPlan: CT chest booked for July 29; no completed CT result is available in this record. Spirometry requested; no result yet. Review after imaging; urgent return for worsening breathlessness, chest pain or hemoptysis.",
+      "metadata": {
+        "department": "Respiratory Medicine",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-08",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-01",
+      "document_type": "nursing_note",
+      "title": "Initial intake",
+      "author": "Dr Mira Vale (fictional)",
+      "event_at": "2026-01-08T09:10:00+03:00",
+      "authored_at": "2026-01-08T09:20:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-08.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nIntake: Daniel M., synthetic age 47. Describes a dry cough during the past week and a half, disturbing sleep twice. Heartburn after late meals. No regular medicines reported. No known allergies reported. Never smoked. Able to walk to clinic without dyspnea.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-09",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-03",
+      "document_type": "administrative_note",
+      "title": "Results contact record",
+      "author": "Dr Mira Vale (fictional)",
+      "event_at": "2026-03-19T16:00:00+03:00",
+      "authored_at": "2026-03-19T16:15:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-09.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nTelephone contact at 16:00: Patient informed that chest radiograph needs repeat imaging in six weeks. Repeat radiograph due April 30, 2026. Patient acknowledged plan. No new symptoms reported during call.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-10",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-04",
+      "document_type": "administrative_note",
+      "title": "Scheduling review",
+      "author": "Dr Mira Vale (fictional)",
+      "event_at": "2026-04-30T11:00:00+03:00",
+      "authored_at": "2026-04-30T11:10:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-10.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nAt checkout the prior repeat-radiograph task is still displayed as outstanding. Patient reports attending imaging earlier today; finalized result is not yet visible to scheduling staff. Internal medicine appointment requested. Task completion will require report reconciliation.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-11",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-06",
+      "document_type": "discharge_summary",
+      "title": "Ambulatory follow-up instructions",
+      "author": "Dr Nia Reed (fictional)",
+      "event_at": "2026-07-08T12:15:00+03:00",
+      "authored_at": "2026-07-08T12:45:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-11.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nAmbulatory disposition following urgent assessment. Stop lisinopril; losartan 25 mg once daily prescribed from tomorrow. Do not take both medicines together. Respiratory review booked July 22. CT requested, appointment pending. Seek urgent care for breathlessness at rest, hemoptysis, chest pain or rapid deterioration. No CT or spirometry result available today.",
+      "metadata": {
+        "department": "Urgent Assessment",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-12",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-07",
+      "document_type": "nursing_note",
+      "title": "Medication reconciliation",
+      "author": "Dr Ivo Fern (fictional)",
+      "event_at": "2026-07-22T09:15:00+03:00",
+      "authored_at": "2026-07-22T09:25:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-12.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nPatient reports no lisinopril since July 8 and reports taking losartan 25 mg each morning since July 9. No dispensing or administration record supplied. Omeprazole course for recurrent heartburn completed July 2; symptoms improved. No clear cough improvement yet. This is patient-reported use, not observed administration.",
+      "metadata": {
+        "department": "Respiratory Medicine",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-13",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-02",
+      "document_type": "lab_report",
+      "title": "Hematology and chemistry report",
+      "author": "Dr Mira Vale (fictional)",
+      "event_at": "2026-02-12T09:20:00+03:00",
+      "authored_at": "2026-02-12T11:05:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-13.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nSpecimen collected: 2026-02-12T09:20:00+03:00\nResults finalized: 2026-02-12T11:00:00+03:00\nAdult male local synthetic reference intervals; not universal clinical thresholds.\nLAB-001-01 | Hemoglobin: 14.1 g/dL | reference 13.2-16.6 | within interval\nLAB-001-02 | White blood cells: 7.2 10^9/L | reference 3.4-9.6 | within interval\nLAB-001-03 | C-reactive protein: 4 mg/L | reference 0.0-5.0 | within interval\nLAB-001-04 | Creatinine: 0.92 mg/dL | reference 0.74-1.35 | within interval\nLAB-001-05 | Potassium: 4.2 mmol/L | reference 3.6-5.2 | within interval",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-14",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-03",
+      "document_type": "lab_report",
+      "title": "Hematology and chemistry report",
+      "author": "Dr Mira Vale (fictional)",
+      "event_at": "2026-03-19T09:20:00+03:00",
+      "authored_at": "2026-03-19T11:05:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-14.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nSpecimen collected: 2026-03-19T09:20:00+03:00\nResults finalized: 2026-03-19T11:00:00+03:00\nAdult male local synthetic reference intervals; not universal clinical thresholds.\nLAB-001-06 | Hemoglobin: 13.6 g/dL | reference 13.2-16.6 | within interval\nLAB-001-07 | White blood cells: 8.0 10^9/L | reference 3.4-9.6 | within interval\nLAB-001-08 | C-reactive protein: 12 mg/L | reference 0.0-5.0 | HIGH\nLAB-001-09 | Creatinine: 0.96 mg/dL | reference 0.74-1.35 | within interval\nLAB-001-10 | Potassium: 4.4 mmol/L | reference 3.6-5.2 | within interval",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-15",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-04",
+      "document_type": "lab_report",
+      "title": "Hematology and chemistry report",
+      "author": "Dr Mira Vale (fictional)",
+      "event_at": "2026-04-30T09:20:00+03:00",
+      "authored_at": "2026-04-30T11:05:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-15.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nSpecimen collected: 2026-04-30T09:20:00+03:00\nResults finalized: 2026-04-30T11:00:00+03:00\nAdult male local synthetic reference intervals; not universal clinical thresholds.\nLAB-001-11 | Hemoglobin: 13.1 g/dL | reference 13.2-16.6 | LOW\nLAB-001-12 | White blood cells: 8.4 10^9/L | reference 3.4-9.6 | within interval\nLAB-001-13 | C-reactive protein: 18 mg/L | reference 0.0-5.0 | HIGH\nLAB-001-14 | Creatinine: 0.95 mg/dL | reference 0.74-1.35 | within interval\nLAB-001-15 | Potassium: 4.3 mmol/L | reference 3.6-5.2 | within interval",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-16",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-06",
+      "document_type": "lab_report",
+      "title": "Hematology and chemistry report",
+      "author": "Dr Nia Reed (fictional)",
+      "event_at": "2026-07-08T09:20:00+03:00",
+      "authored_at": "2026-07-08T11:05:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-16.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nSpecimen collected: 2026-07-08T09:20:00+03:00\nResults finalized: 2026-07-08T11:00:00+03:00\nAdult male local synthetic reference intervals; not universal clinical thresholds.\nLAB-001-16 | Hemoglobin: 12.4 g/dL | reference 13.2-16.6 | LOW\nLAB-001-17 | White blood cells: 9.8 10^9/L | reference 3.4-9.6 | HIGH\nLAB-001-18 | C-reactive protein: 31 mg/L | reference 0.0-5.0 | HIGH\nLAB-001-19 | Creatinine: 0.98 mg/dL | reference 0.74-1.35 | within interval\nLAB-001-20 | Potassium: 4.5 mmol/L | reference 3.6-5.2 | within interval",
+      "metadata": {
+        "department": "Urgent Assessment",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-17",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-07",
+      "document_type": "lab_report",
+      "title": "Hematology and chemistry report",
+      "author": "Dr Ivo Fern (fictional)",
+      "event_at": "2026-07-22T09:20:00+03:00",
+      "authored_at": "2026-07-22T11:05:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-17.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nSpecimen collected: 2026-07-22T09:20:00+03:00\nResults finalized: 2026-07-22T11:00:00+03:00\nAdult male local synthetic reference intervals; not universal clinical thresholds.\nLAB-001-21 | Hemoglobin: 12.5 g/dL | reference 13.2-16.6 | LOW\nLAB-001-22 | White blood cells: 9.2 10^9/L | reference 3.4-9.6 | within interval\nLAB-001-23 | C-reactive protein: 28 mg/L | reference 0.0-5.0 | HIGH\nLAB-001-24 | Creatinine: 0.96 mg/dL | reference 0.74-1.35 | within interval\nLAB-001-25 | Potassium: 4.4 mmol/L | reference 3.6-5.2 | within interval",
+      "metadata": {
+        "department": "Respiratory Medicine",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-18",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-03",
+      "document_type": "radiology_report",
+      "title": "Chest radiograph report",
+      "author": "Dr Sera Flint, radiology (fictional)",
+      "event_at": "2026-03-19T10:00:00+03:00",
+      "authored_at": "2026-03-19T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-18.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nExam: PA and lateral chest radiograph.\nIndication: Persistent cough.\nTechnique: Standard two-view study (fictional report).\nComparison: None available. Findings: Small ill-defined right lower-zone air-space opacity. No pleural effusion. Cardiomediastinal silhouette not enlarged. Impression: Nonspecific right basal opacity; inflammatory change or subsegmental atelectatic change are considerations. Repeat chest radiograph in six weeks to assess resolution.\nAny attached image is an externally sourced reference radiograph, not an examination of this simulated patient.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-19",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-04",
+      "document_type": "radiology_report",
+      "title": "Chest radiograph report",
+      "author": "Dr Sera Flint, radiology (fictional)",
+      "event_at": "2026-04-30T10:00:00+03:00",
+      "authored_at": "2026-04-30T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-19.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nExam: PA and lateral chest radiograph.\nIndication: Persistent cough.\nTechnique: Standard two-view study (fictional report).\nComparison: March 19, 2026. Findings: Right lower-zone opacity persists without convincing interval clearing. No effusion or new diffuse change. Impression: Persistent nonspecific right basal opacity. Respiratory assessment and CT characterization are advised; a specific diagnosis cannot be assigned on this radiograph.\nAny attached image is an externally sourced reference radiograph, not an examination of this simulated patient.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-20",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-06",
+      "document_type": "radiology_report",
+      "title": "Chest radiograph report",
+      "author": "Dr Sera Flint, radiology (fictional)",
+      "event_at": "2026-07-08T10:00:00+03:00",
+      "authored_at": "2026-07-08T12:00:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-20.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nExam: PA and lateral chest radiograph.\nIndication: Persistent cough.\nTechnique: Standard two-view study (fictional report).\nComparison: April 30, 2026. Findings: Persistent right basal opacity, slightly more conspicuous; no pleural effusion. Impression: Unresolved focal opacity. Expedite CT chest and respiratory review. Radiograph alone does not establish etiology.\nAny attached image is an externally sourced reference radiograph, not an examination of this simulated patient.",
+      "metadata": {
+        "department": "Urgent Assessment",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-21",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-01",
+      "document_type": "prescription",
+      "title": "Reflux prescription",
+      "author": "Dr Mira Vale (fictional)",
+      "event_at": "2026-01-08T09:45:00+03:00",
+      "authored_at": "2026-01-08T12:45:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-21.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nMED-001-01: Omeprazole 20 mg orally once daily, January 9 through February 5, 2026, for symptomatic heartburn. Ordered January 8 at 09:45 +03:00. Intended course only; administration not observed.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-22",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-02",
+      "document_type": "prescription",
+      "title": "Blood pressure prescription",
+      "author": "Dr Mira Vale (fictional)",
+      "event_at": "2026-02-12T09:45:00+03:00",
+      "authored_at": "2026-02-12T12:45:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-22.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nMED-001-02: Lisinopril 5 mg orally once daily; intended start February 13, 2026. Ordered February 12 at 09:45 +03:00. Review potassium and renal function. Possible adverse effects including cough discussed. Prescription does not establish actual exposure.",
+      "metadata": {
+        "department": "Primary Care",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "DOC-001-23",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-06",
+      "document_type": "prescription",
+      "title": "Medication change instructions",
+      "author": "Dr Nia Reed (fictional)",
+      "event_at": "2026-07-08T12:00:00+03:00",
+      "authored_at": "2026-07-08T12:45:00+03:00",
+      "mime_type": "application/pdf",
+      "storage_path": "cases/CASE-001/documents/DOC-001-23.pdf",
+      "text_content": "SYNTHETIC — NOT FOR CLINICAL USE\nMED-001-05: Stop lisinopril on July 8, 2026 at 12:00 +03:00. MED-001-06: Losartan 25 mg orally once daily from July 9, 2026. Ordered July 8 at 12:00 +03:00. Check potassium and renal function at follow-up. These are instructions, not observed administration.",
+      "metadata": {
+        "department": "Urgent Assessment",
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    }
+  ],
+  "imaging_studies": [
+    {
+      "id": "IMG-001-01",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-03",
+      "modality": "X_RAY",
+      "body_region": "chest",
+      "performed_at": "2026-03-19T10:00:00+03:00",
+      "reported_at": "2026-03-19T12:00:00+03:00",
+      "status": "final",
+      "report_document_id": "DOC-001-18"
+    },
+    {
+      "id": "IMG-001-02",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-04",
+      "modality": "X_RAY",
+      "body_region": "chest",
+      "performed_at": "2026-04-30T10:00:00+03:00",
+      "reported_at": "2026-04-30T12:00:00+03:00",
+      "status": "final",
+      "report_document_id": "DOC-001-19"
+    },
+    {
+      "id": "IMG-001-03",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-06",
+      "modality": "X_RAY",
+      "body_region": "chest",
+      "performed_at": "2026-07-08T10:00:00+03:00",
+      "reported_at": "2026-07-08T12:00:00+03:00",
+      "status": "final",
+      "report_document_id": "DOC-001-20"
+    }
+  ],
+  "imaging_assets": [
+    {
+      "id": "IMG-ASSET-001-01",
+      "imaging_study_id": "IMG-001-01",
+      "asset_type": "reference_radiograph",
+      "mime_type": "image/jpeg",
+      "storage_path": "cases/CASE-001/imaging/IMG-001-01.jpg",
+      "metadata": {
+        "width": 2926,
+        "height": 2706,
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    },
+    {
+      "id": "IMG-ASSET-001-02",
+      "imaging_study_id": "IMG-001-02",
+      "asset_type": "reference_radiograph",
+      "mime_type": "image/jpeg",
+      "storage_path": "cases/CASE-001/imaging/IMG-001-02.jpg",
+      "metadata": {
+        "width": 784,
+        "height": 732,
+        "synthetic_label": "SYNTHETIC — NOT FOR CLINICAL USE"
+      }
+    }
+  ],
+  "referrals": [
+    {
+      "id": "REF-001-01",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-04",
+      "referring_department": "Primary Care",
+      "referred_department": "Internal Medicine",
+      "reason": "Persistent cough and unresolved imaging finding",
+      "ordered_at": "2026-04-30T10:45:00+03:00",
+      "appointment_at": "2026-06-04T09:00:00+03:00",
+      "status": "completed"
+    },
+    {
+      "id": "REF-001-02",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-06",
+      "referring_department": "Urgent Assessment",
+      "referred_department": "Respiratory Medicine",
+      "reason": "Persistent opacity, cough, weight loss and reduced exercise tolerance",
+      "ordered_at": "2026-07-08T12:00:00+03:00",
+      "appointment_at": "2026-07-22T09:00:00+03:00",
+      "status": "completed"
+    }
+  ],
+  "diagnoses": [
+    {
+      "id": "DX-001-01",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-01",
+      "name": "Symptomatic gastroesophageal reflux",
+      "status": "provisional",
+      "diagnosed_at": "2026-01-08"
+    },
+    {
+      "id": "DX-001-02",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-02",
+      "name": "Hypertension",
+      "status": "confirmed",
+      "diagnosed_at": "2026-02-12"
+    },
+    {
+      "id": "DX-001-03",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-05",
+      "name": "ACE inhibitor-associated cough",
+      "status": "suspected",
+      "diagnosed_at": "2026-06-04"
+    }
+  ],
+  "symptoms": [
+    {
+      "id": "SYM-001-01",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-01",
+      "name": "Cough",
+      "status": "active",
+      "description": "Reported as present for about ten days at January 8 encounter; exact onset not established."
+    }
+  ],
+  "diagnostic_reports": [
+    {
+      "id": "RPT-001-L1",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-02",
+      "report_type": "laboratory",
+      "title": "Hematology and chemistry",
+      "status": "final",
+      "issued_at": "2026-02-12T11:00:00+03:00",
+      "document_id": "DOC-001-13",
+      "observation_ids": [
+        "LAB-001-01",
+        "LAB-001-02",
+        "LAB-001-03",
+        "LAB-001-04",
+        "LAB-001-05"
+      ]
+    },
+    {
+      "id": "RPT-001-L2",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-03",
+      "report_type": "laboratory",
+      "title": "Hematology and chemistry",
+      "status": "final",
+      "issued_at": "2026-03-19T11:00:00+03:00",
+      "document_id": "DOC-001-14",
+      "observation_ids": [
+        "LAB-001-06",
+        "LAB-001-07",
+        "LAB-001-08",
+        "LAB-001-09",
+        "LAB-001-10"
+      ]
+    },
+    {
+      "id": "RPT-001-L3",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-04",
+      "report_type": "laboratory",
+      "title": "Hematology and chemistry",
+      "status": "final",
+      "issued_at": "2026-04-30T11:00:00+03:00",
+      "document_id": "DOC-001-15",
+      "observation_ids": [
+        "LAB-001-11",
+        "LAB-001-12",
+        "LAB-001-13",
+        "LAB-001-14",
+        "LAB-001-15"
+      ]
+    },
+    {
+      "id": "RPT-001-L4",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-06",
+      "report_type": "laboratory",
+      "title": "Hematology and chemistry",
+      "status": "final",
+      "issued_at": "2026-07-08T11:00:00+03:00",
+      "document_id": "DOC-001-16",
+      "observation_ids": [
+        "LAB-001-16",
+        "LAB-001-17",
+        "LAB-001-18",
+        "LAB-001-19",
+        "LAB-001-20"
+      ]
+    },
+    {
+      "id": "RPT-001-L5",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-07",
+      "report_type": "laboratory",
+      "title": "Hematology and chemistry",
+      "status": "final",
+      "issued_at": "2026-07-22T11:00:00+03:00",
+      "document_id": "DOC-001-17",
+      "observation_ids": [
+        "LAB-001-21",
+        "LAB-001-22",
+        "LAB-001-23",
+        "LAB-001-24",
+        "LAB-001-25"
+      ]
+    },
+    {
+      "id": "RPT-001-I1",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-03",
+      "report_type": "radiology",
+      "title": "Chest radiograph",
+      "status": "final",
+      "issued_at": "2026-03-19T12:00:00+03:00",
+      "document_id": "DOC-001-18",
+      "imaging_study_id": "IMG-001-01",
+      "conclusion": "Comparison: None available. Findings: Small ill-defined right lower-zone air-space opacity. No pleural effusion. Cardiomediastinal silhouette not enlarged. Impression: Nonspecific right basal opacity; inflammatory change or subsegmental atelectatic change are considerations. Repeat chest radiograph in six weeks to assess resolution."
+    },
+    {
+      "id": "RPT-001-I2",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-04",
+      "report_type": "radiology",
+      "title": "Chest radiograph",
+      "status": "final",
+      "issued_at": "2026-04-30T12:00:00+03:00",
+      "document_id": "DOC-001-19",
+      "imaging_study_id": "IMG-001-02",
+      "conclusion": "Comparison: March 19, 2026. Findings: Right lower-zone opacity persists without convincing interval clearing. No effusion or new diffuse change. Impression: Persistent nonspecific right basal opacity. Respiratory assessment and CT characterization are advised; a specific diagnosis cannot be assigned on this radiograph."
+    },
+    {
+      "id": "RPT-001-I3",
+      "patient_id": "SYN-001",
+      "encounter_id": "ENC-001-06",
+      "report_type": "radiology",
+      "title": "Chest radiograph",
+      "status": "final",
+      "issued_at": "2026-07-08T12:00:00+03:00",
+      "document_id": "DOC-001-20",
+      "imaging_study_id": "IMG-001-03",
+      "conclusion": "Comparison: April 30, 2026. Findings: Persistent right basal opacity, slightly more conspicuous; no pleural effusion. Impression: Unresolved focal opacity. Expedite CT chest and respiratory review. Radiograph alone does not establish etiology."
+    }
+  ]
+}
